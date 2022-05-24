@@ -39,22 +39,23 @@ wTO.fast(
 Compute the wTO and also the bootstraps. Proposed at arXiv:1711.04702. This is a quicker version of the wTO.Complete. It doesn't contain diagnose plots nor a parallel version.
 }
 \examples{
-wTO.fast(Data = Microarray_Expression1,
-Overlap = ExampleGRF$x, 
-method = "p")
+# wTO.fast(Data = Microarray_Expression1,
+# Overlap = ExampleGRF$x, 
+# method = "p")
 
 # For a time series with lag = 4
-wTO.fast(Data = Microarray_Expression1,
-Overlap = ExampleGRF$x, 
-method = "p", 
-method_resampling = 'BlockBootstrap', 
-lag = 4)
+# wTO.fast(Data = Microarray_Expression1,
+# Overlap = ExampleGRF$x, 
+# method = "p", 
+# method_resampling = 'BlockBootstrap', 
+# lag = 4)
+
 # For a study where the individuals were measured multiple times.
-wTO.fast(Data = Microarray_Expression1,
-Overlap = ExampleGRF$x, 
-method = "p", 
-method_resampling = 'BlockBootstrap', 
-ID = rep(1:9, each= 2))
+# wTO.fast(Data = Microarray_Expression1,
+# Overlap = ExampleGRF$x, 
+# method = "p", 
+# method_resampling = 'BlockBootstrap', 
+# ID = rep(1:9, each= 2))
 }
 \author{
 Deisy Morselli Gysi <deisy at bioinf.uni-leipzig.de>
