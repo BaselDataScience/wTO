@@ -4,14 +4,23 @@
 \alias{CorrelationOverlap}
 \title{CorrelationOverlap}
 \usage{
-CorrelationOverlap(Data, Overlap, method)
+CorrelationOverlap(Data, Overlap, method, use = "everything")
 }
 \arguments{
-\item{Data}{data.frame containing the expression data. Nodes on the Rows, Individuals on the Columns. Don't forget to give the names to the Nodes and to the Individuals. Nodes must have the row.names() with the Node Name.}
+\item{Data}{data.frame containing the expression data. Nodes on the Rows, Individuals on the Columns.
+Don't forget to give the names to the Nodes and to the Individuals.
+Nodes must have the row.names() with the Node Name.}
 
 \item{Overlap}{A vector containg the names of the Nodes of interest.}
 
-\item{method}{Spearman ("s", "spearman") or Pearson ("p", "pearson") correlation}
+\item{method}{A vector containg the names of the Nodes a character string 
+indicating which correlation coefficient (or covariance) is to be computed. 
+One of "pearson" (default), "kendall", or "spearman": can be abbreviated.Spearman,
+Kendall, or Pearson correlation}
+
+\item{use}{an optional character string giving a method for computing covariances
+in the presence of missing values. This must be (an abbreviation of) one of the strings
+"everything", "all.obs", "complete.obs", "na.or.complete", or "pairwise.complete.obs".}
 }
 \description{
 This function computes the correlation between Nodes and the Overlapping Nodes of interest.
