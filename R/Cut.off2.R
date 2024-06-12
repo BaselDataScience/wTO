@@ -12,7 +12,7 @@
 #' @author Deisy Morselli Gysi <deisy at bioinf.uni-leipzig.de>
 
 
-Cut.off = function(wTO_value, type, plot){
+Cut.off = function(wTO_value, main, plot){
   `%ni%` <- Negate(`%in%`)
   wTO_value = plyr::arrange(wTO_value, wTO_value$Var1)
   wTO_value[is.na(wTO_value)]<- 0
