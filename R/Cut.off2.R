@@ -54,7 +54,7 @@ Cut.off = function(wTO_value, type, plot){
       graphics::par(xpd=FALSE)
       graphics::plot(wTO_value$relstar~ wTO_value$Var1, type = "l",
                      xlim = c(floor(min (wTO_value$Var1) ),1),
-                     main = type,
+                     main = main,
                      ylim = c(0, max(wTO_value$relstar)), axes = F,
                      xlab = "wTO", ylab = "Density", col.main = "steelblue2", col.lab = "steelblue2")
       graphics::lines(wTO_value$Var1, wTO_value$relreal, type = "l", col = "violet")
