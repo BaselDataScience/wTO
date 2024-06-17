@@ -5,7 +5,7 @@
 \alias{Microarray_Expression2}
 \title{Microarray_Expression2}
 \format{
-data.frame 1000 lines, 18 columns.
+data.frame 268 lines, 18 columns.
 }
 \usage{
 Microarray_Expression2

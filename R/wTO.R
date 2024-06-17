@@ -1,9 +1,9 @@
 #' @title wTO
-#' @description Calculates the weighted topologycal overlap (wTO)
-#' between a set of Nodes and the Overlapping nodes. This function implements the method from Nowick (2009).
+#' @description Calculates the weighted topological overlap (wTO) between a set of
+#'  nodes and the overlapping nodes. This function implements the method from Nowick (2009).
 #' @param A Is the weighted adjency matrix (correlation matrix).
 #' @param sign ("abs", "sign") if the user wants to use the absolute correlation or the signed correlation.
-#' @return A matrix containing the wTO values.
+#' @return A dataframe containing the wTO values.
 #' @export
 #' @references Katja Nowick, Tim Gernat, Eivind Almaas and Lisa Stubbs (2009) <doi:10.1073/pnas.0911376106>
 #' @author Deisy Morselli Gysi <deisy at bioinf.uni-leipzig.de>
